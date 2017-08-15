@@ -37,3 +37,15 @@ TypeScript supports a number of upcoming JavaScript features (ES6, ES7) that som
 ## TypeScript Definitions
 
 As mentioned earlier, TypeScript provides a way of writing declarations. These are `.d.ts` files, and they can be emitted by the TypeScript compiler alongside JavaScript files. This provides a mechanism for JavaScript and the TypeScript type system to be separated. This is a huge benefit for us developers, as it allows the community to provide type definitions for existing JavaScript that we can then consume in a type safe manner and it allows us to publish our TypeScript as JavaScript with an opt-in type system for fellow TypeScript developers to consume safely.
+
+# Exercise
+- Follow instructions in this repo's readme to clone and install typescript.
+- Create a file called `helloworld.ts` with the world's simplest typescript program in it:
+```
+const Name: string = 'world';
+console.log(`hello ${Name}`);
+
+```
+- Compile it into a javascript file `npm run build 01-getting-started/helloworld.ts`
+  - Observe contents of generated .js file
+- You are now ready to move on to exercise 2.

@@ -1,5 +1,10 @@
 # Typings
 
+** Also deprecated **
+
+_As of Typescript 2.0 there is a better, more automatic, way.  See [06-@types](06-@types)_
+
+
 [Typings](https://github.com/typings/typings) is a similar project to DefinitelyTyped and TSD, but aims to solve all the pitfalls that exist in that ecosystem. Theoretically, everything in DefinitelyTyped is a subset of Typings.
 
 The primary differences between DefinitelyTyped and Typings is that DefinitelyTyped creates one huge repo with everything and all the definitions are ambient module declarations. This worked well at a smaller scale, but it's fractured at the current scale. The maintainers must watch for issues and pull requests for over 1400 packages, even though they might only be maintaining 5 or 10 themselves. The issues around ambient module declarations are also well known, as it inhibits your ability to use the definitions inside of your packages TypeScript module automatically as it can (and will) conflict with other versions of the same ambient declaration.

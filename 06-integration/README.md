@@ -15,11 +15,11 @@ npm install -g typescript # Compiler used by `ts-node`.
 ts-node script.ts
 ```
 
-If you're using Node and using native APIs, the [node typings](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/node) will come in handy!
+If you're using Node and using native APIs, the [node typings](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/node) will come in handy! `npm install --save-dev @types/node`
 
 ## Webpack
 
-If you're using Webpack, I recommend using [`ts-loader`](https://github.com/TypeStrong/ts-loader). To add this to your Webpack project, you **must** as `.ts` (and/or `.tsx`) to your resolve extensions, as well as `ts` to your module loaders:
+If you're using Webpack, I recommend using [`ts-loader`](https://github.com/TypeStrong/ts-loader). To add this to your Webpack project, you **must** add `.ts` (and/or `.tsx`) to your resolve extensions, as well as `ts` to your module loaders:
 
 ```js
 module.exports = {
@@ -39,7 +39,7 @@ module.exports = {
 }
 ```
 
-`ts-loader` will loads its configuration from `tsconfig.json`. You can also pass options, such as using a custom compiler, through the query string.
+`ts-loader` will load its configuration from `tsconfig.json`. You can also pass options, such as using a custom compiler, through the query string.
 
 ## Browserify
 
@@ -48,3 +48,7 @@ If you're more of a Browserify user, I recommend [`tsify`](https://github.com/Ty
 ## Notes
 
 `ts-node`, `ts-loader` and `tsify` all use `commonjs` modules. TypeScript compilation generally has to happen before other plugins, since TypeScript's syntax can not be parsed by a JavaScript parser.
+
+
+## TSLINT
+Make your project more readable, maintainable, and less buggy by having a linter to static analysis.  The main linter tool for Typescript is [TSLint](https://github.com/palantir/tslint).  It has a lot of rules you can customize in your projects `tslint.json` file and there are strongly opinionated rulesets that you can easily bring in to use best practices.  TSLint easily integrates with your build process and IDE with numerous plugins.
